@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алейников Артём | Фиолетовое портфолио</title>
+    <!-- Подключение шрифтов и иконок -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Подключаем внешний CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== НАВИГАЦИОННАЯ ПАНЕЛЬ (плавающая) ===== -->
+<nav class="nav-sticky" id="mainNav">
+    <div class="nav-container">
+        <a href="#home" class="nav-item active" data-section="home" title="Главная">
+            <i class="fas fa-home"></i>
+            <span>Главная</span>
+        </a>
+        <a href="#courses" class="nav-item" data-section="courses" title="Курсы">
+            <i class="fas fa-certificate"></i>
+            <span>Курсы</span>
+        </a>
+        <a href="#projects" class="nav-item" data-section="projects" title="Проекты">
+            <i class="fas fa-project-diagram"></i>
+            <span>Проекты</span>
+        </a>
+        <a href="#coursework" class="nav-item" data-section="coursework" title="Курсовое">
+            <i class="fas fa-book-open"></i>
+            <span>Курсовое</span>
+        </a>
+        <a href="#practice" class="nav-item" data-section="practice" title="Практика">
+            <i class="fas fa-briefcase"></i>
+            <span>Практика</span>
+        </a>
+        <a href="#development" class="nav-item" data-section="development" title="Развитие">
+            <i class="fas fa-chart-line"></i>
+            <span>Развитие</span>
+        </a>
+        <a href="#conferences" class="nav-item" data-section="conferences" title="Конференции">
+            <i class="fas fa-microphone"></i>
+            <span>Конференции</span>
+        </a>
+        <a href="#about" class="nav-item" data-section="about" title="Обо мне">
+            <i class="fas fa-user-astronaut"></i>
+            <span>Обо мне</span>
+        </a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <!-- ===== Шапка с аватаркой (id="home") ===== -->
+    <header id="home" class="header-flex">
+        <!-- ============================================================ -->
+        <!--  АВАТАРКА: замените src на путь к вашей фотографии             -->
+        <!--  Рекомендуемый размер: 120x120 пикселей (квадрат)             -->
+        <!--  Форматы: JPG, PNG, WEBP                                      -->
+        <!-- ============================================================ -->
+        <div class="avatar-wrapper">
+            <img src="foto/Screenshot_5.png" alt="Аватарка Артёма" class="avatar">
+            <!-- Если нет фото, раскомментируйте строку ниже и закомментируйте <img> -->
+            <!-- <div class="avatar-placeholder">👨‍💻</div> -->
+        </div>
+        
+        <div class="header-content">
+            <div class="tagline"><i class="fas fa-code"></i> Студент-разработчик</div>
+            <h1>Алейников Артём Анатольевич</h1>
+            <div class="subhead">
+                <i class="fas fa-laptop-code" style="color: #a855f7;"></i> 
+                Angular • Веб-разработка • Информационные системы
+            </div>
+            <p class="header-description">
+                Создаю функциональные веб-приложения с акцентом на удобство пользователей. Учусь быстро и решаю нетривиальные задачи.
+            </p>
+            <div class="header-meta">
+                <span><i class="fas fa-university"></i> ГБПОУ МО «Люберецкий техникум имени Ю.А. Гагарина»</span>
+                <span><i class="fas fa-graduation-cap"></i> 09.02.07 «Информационные системы и программирование»</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Статистика -->
+    <div class="stats-grid">
+        <div class="stat-card"><span class="stat-number">5+</span><span class="stat-label">Курсов</span></div>
+        <div class="stat-card"><span class="stat-number">6+</span><span class="stat-label">Проектов</span></div>
+        <div class="stat-card"><span class="stat-number">2027</span><span class="stat-label">Выпуск</span></div>
+    </div>
+
+    <!-- ===== Курсы ===== -->
+    <section id="courses">
+        <h2><i class="fas fa-certificate section-icon"></i> Курсы и сертификаты</h2>
+        <div class="grid-2col">
+            <!-- Курс 1 -->
+            <div class="card course-card">
+                <div class="course-image-wrapper">
+                    <!-- ========================================================== -->
+                    <!--  ФОТО ДЛЯ КУРСА: замените src на путь к вашему изображению  -->
+                    <!--  Рекомендуемый размер: 600x400 пикселей                     -->
+                    <!--  Форматы: JPG, PNG, WEBP                                   -->
+                    <!-- ========================================================== -->
+                    <img src="course-sber-llm.jpg" alt="Промпт-инжиниринг и LLM" class="course-image">
+                </div>
+                <span class="card-badge"><i class="fas fa-building"></i> Сбер</span>
+                <h3>Промпт-инжиниринг и LLM</h3>
+                <p class="card-date">СберУниверситет • 2024</p>
+                <p class="card-desc">Изучение принципов промпт-инжиниринга и создание приложений на основе LLM.</p>
+                <div class="tag-group">
+                    <span class="tag">Промпт-инжиниринг</span>
+                    <span class="tag">LLM</span>
+                    <span class="tag">GigaChain</span>
+                    <span class="tag">RAG</span>
+                </div>
+                <a href="https://sberuniversity.ru/certificates/prompt-engineering" target="_blank" class="btn-outline">
+                    <i class="fas fa-file-alt"></i> Посмотреть сертификат →
+                </a>
+            </div>
+
+            <!-- Курс 2 -->
+            <div class="card course-card">
+                <div class="course-image-wrapper">
+                    <!-- ========================================================== -->
+                    <!--  ФОТО ДЛЯ КУРСА: замените src на путь к вашему изображению  -->
+                    <!-- ========================================================== -->
+                    <img src="course-sber-digital.jpg" alt="Цифровые инструменты" class="course-image">
+                </div>
+                <span class="card-badge"><i class="fas fa-building"></i> Сбер</span>
+                <h3>Цифровые инструменты</h3>
+                <p class="card-date">СберУниверситет • 2024</p>
+                <p class="card-desc">Освоение цифровых инструментов для управления финансами.</p>
+                <div class="tag-group">
+                    <span class="tag">Финансы</span>
+                    <span class="tag">Цифровизация</span>
+                    <span class="tag">Управление</span>
+                </div>
+                <a href="https://sberuniversity.ru/certificates/digital-tools" target="_blank" class="btn-outline">
+                    <i class="fas fa-file-alt"></i> Посмотреть сертификат →
+                </a>
+            </div>
+
+            <!-- Курс 3 -->
+            <div class="card course-card">
+                <div class="course-image-wrapper">
+                    <!-- ========================================================== -->
+                    <!--  ФОТО ДЛЯ КУРСА: замените src на путь к вашему изображению  -->
+                    <!-- ========================================================== -->
+                    <img src="course-sber-gigachat.jpg" alt="Работа с LLM GigaChat" class="course-image">
+                </div>
+                <span class="card-badge"><i class="fas fa-building"></i> Сбер</span>
+                <h3>Работа с LLM GigaChat</h3>
+                <p class="card-date">СберУниверситет • 2024</p>
+                <p class="card-desc">Развитие навыков эффективной коммуникации и ведения переговоров.</p>
+                <div class="tag-group">
+                    <span class="tag">Коммуникация</span>
+                    <span class="tag">Переговоры</span>
+                    <span class="tag">Презентации</span>
+                </div>
+                <a href="https://sberuniversity.ru/certificates/gigachat" target="_blank" class="btn-outline">
+                    <i class="fas fa-file-alt"></i> Посмотреть сертификат →
+                </a>
+            </div>
+
+            <!-- Курс 4 -->
+            <div class="card course-card">
+                <div class="course-image-wrapper">
+                    <!-- ========================================================== -->
+                    <!--  ФОТО ДЛЯ КУРСА: замените src на путь к вашему изображению  -->
+                    <!-- ========================================================== -->
+                    <img src="course-vk-web.jpg" alt="VK Education — Введение в веб-разработку" class="course-image">
+                </div>
+                <span class="card-badge"><i class="fas fa-globe"></i> Другой</span>
+                <h3>VK Education — Введение в веб-разработку</h3>
+                <p class="card-date">VK • 2025</p>
+                <p class="card-desc">Основы веб-разработки, работа с API, создание современных веб-приложений.</p>
+                <div class="tag-group">
+                    <span class="tag">VK API</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                </div>
+                <a href="https://education.vk.company/certificates/web-dev" target="_blank" class="btn-outline">
+                    <i class="fas fa-file-alt"></i> Посмотреть сертификат →
+                </a>
+            </div>
+
+            <!-- Курс 5 -->
+            <div class="card course-card">
+                <div class="course-image-wrapper">
+                    <!-- ========================================================== -->
+                    <!--  ФОТО ДЛЯ КУРСА: замените src на путь к вашему изображению  -->
+                    <!-- ========================================================== -->
+                    <img src="course-1c.jpg" alt="1С:Программирование для начинающих" class="course-image">
+                </div>
+                <span class="card-badge"><i class="fas fa-globe"></i> Другой</span>
+                <h3>1С:Программирование для начинающих</h3>
+                <p class="card-date">1С • 2025</p>
+                <p class="card-desc">Основы конфигурирования и разработки на платформе 1С:Предприятие.</p>
+                <div class="tag-group">
+                    <span class="tag">1С:Предприятие</span>
+                    <span class="tag">Конфигурации</span>
+                    <span class="tag">Запросы</span>
+                </div>
+                <a href="foto/photo_5206437357572265416_y.jpg" target="_blank" class="btn-outline">
+                    <i class="fas fa-file-alt"></i> Посмотреть сертификат →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Проекты ===== -->
+    <section id="projects">
+        <h2><i class="fas fa-project-diagram section-icon"></i> Проекты и олимпиады</h2>
+        <div class="grid-2col">
+            <div class="card">
+                <h3><i class="fas fa-landmark card-icon"></i> Музей истории (Laravel)</h3>
+                <p class="card-role">Разработчик</p>
+                <p class="card-desc">Веб-сайт для музея с возможностью просмотра экспонатов, виртуальных экскурсий и покупки билетов.</p>
+                <ul class="project-list">
+                    <li><i class="fas fa-check-circle"></i> Разработка на Laravel</li>
+                    <li><i class="fas fa-check-circle"></i> Система управления экспонатами</li>
+                    <li><i class="fas fa-check-circle"></i> Виртуальные экскурсии</li>
+                    <li><i class="fas fa-check-circle"></i> Онлайн-покупка билетов</li>
+                </ul>
+                <a href="foto/Screenshot_12.png" target="_blank" class="btn-outline">
+                    <i class="fab fa-github"></i> Посмотреть проект →
+                </a>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-user-lock card-icon"></i> Создание аккаунта (Django)</h3>
+                <p class="card-role">Разработчик</p>
+                <p class="card-desc">Система регистрации и авторизации пользователей с валидацией пароля на Django.</p>
+                <ul class="project-list">
+                    <li><i class="fas fa-check-circle"></i> Разработка на Django</li>
+                    <li><i class="fas fa-check-circle"></i> Регистрация пользователей</li>
+                    <li><i class="fas fa-check-circle"></i> Валидация пароля</li>
+                    <li><i class="fas fa-check-circle"></i> Аутентификация</li>
+                </ul>
+                <a href="foto/Screenshot_1.png" target="_blank" class="btn-outline">
+                    <i class="fab fa-github"></i> Посмотреть проект →
+                </a>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-gamepad card-icon"></i> BestGames - маркетплейс игр</h3>
+                <p class="card-role">Frontend разработчик</p>
+                <p class="card-desc">Маркетплейс для поиска и покупки компьютерных игр и внутриигровых предметов.</p>
+                <ul class="project-list">
+                    <li><i class="fas fa-check-circle"></i> Разработка интерфейса</li>
+                    <li><i class="fas fa-check-circle"></i> Система фильтрации</li>
+                    <li><i class="fas fa-check-circle"></i> Корзина покупок</li>
+                    <li><i class="fas fa-check-circle"></i> Адаптивная верстка</li>
+                </ul>
+                <a href="https://nobilior17.github.io/Chempionat/" target="_blank" class="btn-outline">
+                    <i class="fab fa-github"></i> Посмотреть проект →
+                </a>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-server card-icon"></i> Платформа онлайн-обучения</h3>
+                <p class="card-role">Backend разработчик</p>
+                <p class="card-desc">Серверная часть платформы с API для управления курсами и пользователями.</p>
+                <ul class="project-list">
+                    <li><i class="fas fa-check-circle"></i> REST API</li>
+                    <li><i class="fas fa-check-circle"></i> Аутентификация</li>
+                    <li><i class="fas fa-check-circle"></i> Управление курсами</li>
+                    <li><i class="fas fa-check-circle"></i> База данных</li>
+                </ul>
+                <a href="https://nobilior17.github.io/ChempionatBBB/" target="_blank" class="btn-outline">
+                    <i class="fab fa-github"></i> Посмотреть проект →
+                </a>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-pencil-alt card-icon"></i> Интерактивные доски</h3>
+                <p class="card-role">Fullstack разработчик</p>
+                <p class="card-desc">SPA для совместной работы в реальном времени с возможностью рисования.</p>
+                <ul class="project-list">
+                    <li><i class="fas fa-check-circle"></i> Angular</li>
+                    <li><i class="fas fa-check-circle"></i> Real-time обновления</li>
+                    <li><i class="fas fa-check-circle"></i> Инструменты рисования</li>
+                    <li><i class="fas fa-check-circle"></i> Совместная работа</li>
+                </ul>
+                <a href="https://nobilior17.github.io/Chempionat-/" target="_blank" class="btn-outline">
+                    <i class="fab fa-github"></i> Посмотреть проект →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Курсовое проектирование и учебные материалы ===== -->
+    <section id="coursework">
+        <h2><i class="fas fa-book-open section-icon"></i> Курсовое проектирование и учебные материалы</h2>
+        
+        <!-- Курсовое проектирование -->
+        <h3 style="color: #d8c6ff; margin-bottom: 1rem; margin-top: 0.5rem;">
+            <i class="fas fa-pencil-ruler" style="color: #a855f7;"></i> Курсовое проектирование
+        </h3>
+        <div class="grid-2col">
+            <div class="card">
+                <h3><i class="fas fa-file-alt"></i> 1 курсовая</h3>
+                <p class="card-date">Курсовой проект • 2024</p>
+                <p class="card-desc">Разработка информационной системы для управления учебным процессом.</p>
+                <div class="tag-group">
+                    <span class="tag">Анализ</span>
+                    <span class="tag">Проектирование</span>
+                    <span class="tag">Документация</span>
+                </div>
+                <a href="https://docs.google.com/document/d/d=true" target="_blank" class="btn-outline">
+                    <i class="fab fa-github"></i> Перейти к проекту →
+                </a>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-project-diagram"></i> Диаграммы</h3>
+                <p class="card-date">Учебный материал • 2024</p>
+                <p class="card-desc">Use Case, ER-диаграммы, User Flow для различных проектов.</p>
+                <div class="tag-group">
+                    <span class="tag">Use Case</span>
+                    <span class="tag">ER-диаграммы</span>
+                    <span class="tag">User Flow</span>
+                </div>
+                <a href="https://drive.google.com/file/d/1BI_914t2WLWPLM4VnaIzS25emOKphuzV/view?usp=sharing" target="_blank" class="btn-outline">
+                    <i class="fas fa-external-link-alt"></i> Перейти к материалам →
+                </a>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-building" style="color: #a855f7;"></i> МУ МВД России "Люберецкое"</h3>
+<p class="card-date">Сборник материалов • 2026</p>
+<p class="card-desc">
+    Сборник полезных материалов в МУ МВД России "Люберецкое":
+</p>
+<ul class="project-list" style="margin-top: 0.8rem;">
+    <li><i class="fas fa-file-signature"></i> Оформление и регистрация служебных документов</li>
+    <li><i class="fas fa-sort-numeric-up"></i> Нумерация и систематизация дел</li>
+    <li><i class="fas fa-paperclip"></i> Скрепление и формирование архивных дел</li>
+    <li><i class="fas fa-search"></i> Поиск и обработка документов в архиве</li>
+    <li><i class="fas fa-folder-open"></i> Работа с номенклатурой дел</li>
+    <li><i class="fas fa-stamp"></i> Составление описей и актов</li>
+</ul>
+<div class="tag-group">
+    
+</div>
+<a  href="https://develop-practical-whale.tilda.ws" target="_blank" class="btn-outline">
+    <i class="fas fa-external-link-alt"></i> Перейти в МУ МВД России "Люберецкое" →
+</a>
+            </div>
+        </div>
+
+        <!-- Учебные материалы -->
+        <h3 style="color: #d8c6ff; margin-bottom: 1rem; margin-top: 2.5rem;">
+            <i class="fas fa-graduation-cap" style="color: #a855f7;"></i> Учебные материалы
+        </h3>
+        <div class="grid-2col">
+            <div class="card">
+                <h3><i class="fas fa-industry"></i> Конспект: Цифровое производство</h3>
+                <p class="card-date">Учебный материал • 2024</p>
+                <p class="card-desc">Конспект лекций по цифровому производству, автоматизации и промышленным системам.</p>
+                <div class="tag-group">
+                    <span class="tag">Цифровое производство</span>
+                    <span class="tag">Автоматизация</span>
+                    <span class="tag">Промышленность</span>
+                </div>
+                <a href="https://docs.google.com/document/d/1LbXOq5c28rdbwbmHjUr1aZ_LtNHOSCVcPo7gOIVCbWc/edit?usp=sharing" target="_blank" class="btn-outline">
+                    <i class="fas fa-file-pdf"></i> Открыть конспект →
+                </a>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-calculator"></i> Конспект: Численные методы</h3>
+                <p class="card-date">Учебный материал • 2024</p>
+                <p class="card-desc">Конспект лекций по численным методам: интерполяция, интегрирование, решение уравнений.</p>
+                <div class="tag-group">
+                    <span class="tag">Численные методы</span>
+                    <span class="tag">Математика</span>
+                    <span class="tag">Алгоритмы</span>
+                </div>
+                <a href="https://docs.google.com/document/d/1fyGFUkyiVY07C36Nvw5M9pViBv9aNP9PWbH-n9Fhp-Y/edit?usp=sharing" target="_blank" class="btn-outline">
+                    <i class="fas fa-file-pdf"></i> Открыть конспект →
+                </a>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-code"></i> Colab: Численные методы</h3>
+                <p class="card-date">Практика • 2024</p>
+                <p class="card-desc">Интерактивные Jupyter Notebooks для изучения численных методов в Google Colab.</p>
+                <div class="tag-group">
+                    <span class="tag">Python</span>
+                    <span class="tag">Colab</span>
+                    <span class="tag">NumPy</span>
+                </div>
+                <a href="https://colab.research.google.com/drive/1tR3vdd6GgodOMzhE_OxEuUFNqncfJJml?usp=sharing" target="_blank" class="btn-outline">
+                    <i class="fab fa-google"></i> Открыть в Colab →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Практика ===== -->
+    <section id="practice">
+        <h2><i class="fas fa-briefcase section-icon"></i> Производственная практика</h2>
+        <div class="practice-placeholder">
+            <i class="fas fa-book-open" style="font-size: 2.5rem; color: #a855f7; margin-bottom: 0.8rem; display: block;"></i>
+            <p style="font-size: 1.2rem; font-weight: 600; color: #d8c6ff;">Опыт работы в МУ МВД России "Люберецкое"</p>
+            <p style="color: #b5a1d6;">Дополнительная информация о практике будет добавлена позже.</p>
+        </div>
+    </section>
+
+    <!-- ===== Саморазвитие ===== -->
+    <section id="development">
+        <h2><i class="fas fa-chart-line section-icon"></i> Саморазвитие</h2>
+        <div class="grid-2col">
+            <div class="card skill-card">
+                <h3><i class="fas fa-paint-brush"></i> Frontend разработка</h3>
+                <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
+                <span class="skill-percent">50%</span>
+            </div>
+            <div class="card skill-card">
+                <h3><i class="fab fa-python"></i> Python программирование</h3>
+                <div class="skill-bar"><div class="skill-fill" style="width: 60%;"></div></div>
+                <span class="skill-percent">50%</span>
+            </div>
+            <div class="card skill-card">
+                <h3><i class="fas fa-graduation-cap"></i> Квалификация</h3>
+                <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+                <span class="skill-percent">65%</span>
+            </div>
+        </div>
+
+        <div style="margin-top: 2rem;">
+            <h3 style="color: #d8c6ff; margin-bottom: 0.8rem;">
+                <i class="fas fa-bullseye" style="color: #a855f7;"></i> Направления развития:
+            </h3>
+            <div class="direction-tags">
+                <span class="tag direction-tag">🧠 Изучение новых фреймворков</span>
+                <span class="tag direction-tag">⚡ Оптимизация производительности</span>
+                <span class="tag direction-tag">🤝 Командная разработка</span>
+                <span class="tag direction-tag">📱 Мобильная адаптация</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Конференции и мероприятия ===== -->
+    <section id="conferences">
+        <h2><i class="fas fa-microphone section-icon"></i> Конференции и мероприятия</h2>
+        <div class="conf-card">
+            <div>
+                <strong style="color: #f0e6ff; font-size: 1.05rem;">Конференция 1С: Образование 2026</strong>
+                <span class="conf-badge">📍 Очное участие</span>
+                <span class="conf-date">📅 2026 год</span>
+            </div>
+            <div class="conf-links">
+                <a href="https://educonf.1c.ru/conf2026 " target="_blank" class="conf-btn">
+                    <i class="fas fa-external-link-alt"></i> Перейти на сайт конференции
+                </a>
+                <a href="foto/photo_5206437357572265416_y.jpg" target="_blank" class="conf-btn">
+                    <i class="fas fa-camera"></i> Открыть фото
+                </a>
+            </div>
+        </div>
+
+    <!-- ===== Обо мне ===== -->
+    <section id="about">
+        <h2><i class="fas fa-user-astronaut section-icon"></i> Обо мне</h2>
+        <div class="about-grid">
+            <div>
+                <h3 style="color: #d8c6ff;">Профессиональная биография</h3>
+                <p style="color: #d4c6f0; line-height: 1.8;">
+                    Студент Люберецкого техникума имени Ю.А. Гагарина, увлеченный созданием современных и функциональных веб-приложений. Заинтересован в frontend-разработке и создании удобных пользовательских интерфейсов.
+                </p>
+                <div style="margin-top: 1.5rem;">
+                    <p class="about-item"><i class="fas fa-university contact-icon"></i> <strong>Учебное заведение:</strong> ГБПОУ МО «Люберецкий техникум имени Ю.А. Гагарина»</p>
+                    <p class="about-item"><i class="fas fa-graduation-cap contact-icon"></i> <strong>Специальность:</strong> 09.02.07 «Информационные системы и программирование»</p>
+                    <p class="about-item"><i class="fas fa-calendar-alt contact-icon"></i> <strong>Год окончания:</strong> 2027</p>
+                </div>
+            </div>
+            <div>
+ <!-- ===== КОНТАКТЫ И СОЦСЕТИ ===== -->
+<div class="about-grid">
+    <!-- Левая колонка: профессиональная биография -->
+    <div>
+
+    <!-- Правая колонка: контакты и соцсети -->
+    <div>
+        <h3 style="color: #d8c6ff;">Контакты и соцсети</h3>
+
+        <!-- ========================================================== -->
+        <!--  СОЦИАЛЬНЫЕ СЕТИ: вставьте свои ссылки в атрибуты href      -->
+        <!--  Пример: href="https://t.me/ваш_логин"                     -->
+        <!-- ========================================================== -->
+        <div class="social-links">
+            <!-- Telegram -->
+            <a href="https://t.me/@Nobilior1" class="social-link" target="_blank" title="Telegram">
+                <i class="fab fa-telegram"></i>
+            </a>
+            </a>
+            <!-- GitHub -->
+            <a href="https://github.com/Nobilior17" class="social-link" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://ru.yougile.com/board/japtjsp2oqcm" class="social-link" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+                <div style="margin-top: 1.5rem;">
+                    <p class="about-item"><i class="fas fa-envelope contact-icon"></i> alejnikova091@gmail.com</p>
+                    <p class="about-item"><i class="fas fa-phone-alt contact-icon"></i> +7 (909) 658-97-88</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <footer style="text-align: center; color: #a083c9; font-size: 0.9rem; padding: 0.5rem 0;">
+        <i class="fas fa-crown" style="color: #a855f7;"></i> Алейников Артём • 2026 • Фиолетовое портфолио
+    </footer>
+</div>
+
+<!-- Подключаем внешний JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
